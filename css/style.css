@@ -19,6 +19,7 @@ header {
     display: flex;
     margin: 0;
     padding: 0 10% 0 10%;
+
 }
 
 ul {
@@ -27,7 +28,8 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: black; 
+    text-align: center;
 }
 
 nav ul {
@@ -35,13 +37,13 @@ nav ul {
 }    
 
 nav li {
-    text-align: center;
     margin: auto auto auto 40px;
     font-weight: 600;
 }
 
 .sito {
-    margin: auto auto auto 0;
+    margin: auto;
+    font-weight: 700;
 }
 
 .intro {
