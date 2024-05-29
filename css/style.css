@@ -41,9 +41,15 @@ nav ul, footer ul {
 }    
 
 nav li, footer li {
-    margin: auto auto auto 40px;
     font-weight: 600;
-    text-align: center;
+}
+
+nav li {
+    margin: auto 0 auto 40px;
+}
+
+footer li {
+    margin: auto 0 auto auto;
 }
 
 .sito {
@@ -87,9 +93,14 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr 4fr;
     padding: 0 10% 0 10%;
+    height: 200px;
 }
 
 footer div {
     margin: auto auto auto 0;
+    font-size: 32px;
 }
 
+footer img {
+    margin: auto;
+}
