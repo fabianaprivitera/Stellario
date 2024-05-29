@@ -86,7 +86,10 @@ footer {
     background-color: #D9D9D9;
     display: grid;
     grid-template-columns: 2fr 1fr 4fr;
+    padding: 0 10% 0 10%;
 }
 
-
+footer div {
+    margin: auto auto auto 0;
+}
 
