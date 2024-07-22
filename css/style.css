@@ -83,9 +83,13 @@ nav li {
 
 .intro p {
     margin-left: 80px;
-
     max-width: 600px;
     font-size: 18px;
+}
+
+.introduzione {
+    font-size: 22px;
+    padding-bottom: 30px;
 }
 
 .astronauta {
