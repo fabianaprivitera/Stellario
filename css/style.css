@@ -11,6 +11,7 @@ img {
 
 main {
     max-width: 1240px;
+    padding: 40px;
     margin: auto;
 } 
 
@@ -246,6 +247,130 @@ h5 {
     padding: 15px;
 }
 
+.intro-pagine, .testo-pagine, .link-pagine {
+    display: flex;
+}
+
+.intro-pagine {
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 30px;
+    margin: auto auto auto 30px;
+}
+
+.vet-pagine {
+    height: 50px;
+    width: 50px;
+    margin-right: 0;
+    justify-content: end;
+}
+
+.foto-intro img {
+    margin: auto;
+    max-width: 950px;
+    max-height: 548px;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.ellisse {
+    max-height: 60px;
+    margin-bottom: 0;
+}
+
+.line {
+    background-color: white;
+    width: 2px;
+    height: 300px;
+    margin: 0 auto auto auto;
+}
+
+.testo-pagine {
+    gap: 10%;
+    margin: 40px auto 40px auto;
+    justify-content: center;
+}
+
+.testo-pagine p {
+    margin:auto;
+    max-width: 750px;
+    padding-bottom: 20px;
+}
+
+.grid {
+    column-count: 2;
+    gap: 0;
+}
+
+.grid div {
+    position: relative;
+    text-align: center;
+}
+
+.grid img, .grid video {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    
+}
+
+h7 {
+    color: #d9d9d9a7;
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+h8 {
+    color: #d9d9d9a7;
+    bottom: 10px;
+    left: 16px;
+    font-size: 15px;
+    font-style: italic; 
+    max-width: 80px;
+    text-align: center; 
+}
+
+.testo-e-foto {
+    max-width: 700px;
+}
+
+.testo-e-foto img {
+    max-width: 500px;
+}
+
+.link-pagine {
+    justify-content: space-between;
+}
+
+h6 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.sinistra {
+    text-align: right;
+}
+
+.linea-sinistra, .linea-destra {
+    display: flex;
+}
+
+.linea-sinistra img, .linea-destra img {
+    max-height: 20px;
+    margin: 0;
+}
+
+.linea-o {
+    background-color: white;
+    width: 150px;
+    height: 2px;
+    margin: auto auto auto 0;
+}
 
 .segno {
     display: grid;
