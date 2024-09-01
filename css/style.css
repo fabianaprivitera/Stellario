@@ -346,33 +346,25 @@ h8 {
     max-width: 500px;
 }
 
-.link-pagine {
-    justify-content: space-between;
+.link-altre-pagine {
+    margin: 40px auto 40px auto;
+    width: fit-content;
+}
+
+.link-altre-pagine h6 {
+    background-color: #000000;
+    border: 1px solid #fff;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-radius: 16px;
+    text-align: center;
+    padding: 10px;
 }
 
 h6 {
     font-size: 20px;
     margin-bottom: 0;
-}
-
-.sinistra {
-    text-align: right;
-}
-
-.linea-sinistra, .linea-destra {
-    display: flex;
-}
-
-.linea-sinistra img, .linea-destra img {
-    max-height: 20px;
-    margin: 0;
-}
-
-.linea-o {
-    background-color: white;
-    width: 150px;
-    height: 2px;
-    margin: auto auto auto 0;
 }
 
 .segno {
