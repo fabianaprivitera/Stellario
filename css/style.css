@@ -600,6 +600,11 @@ footer li {
         width: 350px;
     }
 
+    .icone-segni {
+        column-count: 2;
+        gap: 20px;
+    }
+
     .segno p {
         font-size: 15px;
     }
