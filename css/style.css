@@ -431,8 +431,13 @@ h6 {
     text-align: center;
 }
 
+.chi-siamo h4 {
+    margin: auto;
+}
+
 .chi_siamo img {
     border-radius: 150px;
+    margin: auto;
 }
 
 footer {
@@ -503,7 +508,6 @@ footer li {
     }
     
     .intro p {
-        
         font-size: 15px;
     }
     
@@ -526,7 +530,7 @@ footer li {
     }
     
     .foto-intro img {
-        width: 400px;
+        width: 350px;
         margin-top: 22px;
     }
     
@@ -568,13 +572,17 @@ footer li {
 }
 
 @media (max-width:700px) {
+    nav ul {
+        margin-right: 10px;
+    }
+    
     .astronauta {
         max-height: 200px;
         top: 500px;
     }
     
     h9, h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .intro {
