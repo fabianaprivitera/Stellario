@@ -419,6 +419,18 @@ h6 {
     margin: 5px auto;
 }
 
+.chi_siamo {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 70px;
+    text-align: center;
+}
+
+.chi_siamo img {
+    border-radius: 150px;
+}
+
 footer {
     background-color: #000000;
     display: grid;
