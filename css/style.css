@@ -50,6 +50,10 @@ nav li {
     margin: auto 0 auto 40px;
 }
 
+main p, h5 {
+    text-shadow: 2px 2px 4px #000000;
+} 
+
 .sito {
     margin: auto 0;
     font-weight: 700;
@@ -499,7 +503,7 @@ footer li {
     }
     
     .intro p {
-        text-shadow: 2px 2px 4px #000000;
+        
         font-size: 15px;
     }
     
