@@ -57,7 +57,7 @@ main p, h5 {
 .sito {
     margin: auto 0;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Bruno Ace", sans-serif;      
 }
 
@@ -425,7 +425,7 @@ h6 {
 }
 
 .chi-siamo h4 {
-    margin: auto;
+    margin: auto auto 15px auto;
 }
 
 .chi_siamo img {
@@ -471,7 +471,7 @@ footer li {
     
     nav li {
         font-size: 10px;
-        margin-left: 14px;
+        margin-left: 10px;
     }
     
     h9, h1 {
@@ -485,6 +485,7 @@ footer li {
     .intro p {
         margin-left: 30px;
         margin-right: 40px;
+        font-size: 12px;
     }
 
     .stellario img {
@@ -577,7 +578,12 @@ footer li {
     h9 {
         font-size: 36px;
     }
+
     
+    h2 {
+        font-size: 16px;
+    }
+
     h1 {
         font-size: 40px;
     }
