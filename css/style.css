@@ -228,11 +228,18 @@ h5 {
 .link-fenomeni {
     margin: 50px auto;
     display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.link-fenomeni-principale {
+    margin: 50px auto;
+    display: grid;
     grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
     gap: 40px;
 }
 
-.link-fenomeni div {
+.link-fenomeni div, .link-fenomeni-principale div {
     background-color: #000000;
     border: 1px solid #fff;
     border-top-style: hidden;
@@ -243,7 +250,7 @@ h5 {
     text-align: center;
 }
 
-.link-fenomeni img {
+.link-fenomeni img, .link-fenomeni-principale img {
     max-height: 60px;
     margin: auto;
     padding: 15px;
@@ -259,7 +266,7 @@ h5 {
 
 h4 {
     font-size: 30px;
-    margin: auto auto auto 30px;
+    margin: auto auto 20px auto;
 }
 
 .vet-pagine {
@@ -270,8 +277,9 @@ h4 {
 }
 
 .foto-intro img {
+    object-fit: cover;
     margin: auto;
-    max-width: 950px;
+    width: 100vh;
     max-height: 548px;
     border-style: solid;
     border-radius: 50px;
