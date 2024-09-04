@@ -37,6 +37,10 @@ a {
     color: rgb(255, 255, 255);
 }
 
+.sottolineato {
+    text-decoration: underline;    
+}
+
 nav ul, footer ul {
     display: flex;
 }    
