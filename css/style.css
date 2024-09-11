@@ -41,6 +41,8 @@ a {
     text-decoration: underline;    
 }
 
+
+
 nav ul, footer ul {
     display: flex;
 }    
@@ -55,7 +57,7 @@ nav li {
 }
 
 main p, h5 {
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 0px 0px 4px #000000;
 } 
 
 .sito {
@@ -80,7 +82,7 @@ main p, h5 {
 
 h9 {
     font-family: "Bruno Ace", sans-serif;
-    font-size: 100px;
+    font-size: 85px;
     font-weight: 800;
 }
 
@@ -104,7 +106,7 @@ h9 {
 }
 
 .introduzione {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 30px;
 }
 
@@ -209,7 +211,7 @@ h5 {
     margin-bottom: 100px;
 }
 
-.testo-macroa-univ a, .testo-macroa-astro a {
+.testo-macroa-univ a, .testo-macroa-astro a, .link-altre-pagine h6 {
     font-size: 30px;
     display: block;
     text-align: center;
@@ -217,8 +219,8 @@ h5 {
     color:rgba(255, 255, 255, 0.54);
 }
 
-.testo-macroa-univ a:hover {
-    transform: scale(1.5);
+.testo-macroa-univ a:hover, .link-altre-pagine h6:hover {
+    transform: scale(1.2);
     color:rgb(255, 255, 255);
     font-weight: 600; 
 }
@@ -252,6 +254,10 @@ h5 {
     border-radius: 16px;
     padding: 30px 0;
     text-align: center;
+}
+
+.link-fenomeni div:hover, .link-fenomeni-principale div:hover, .link-fenomeni img:hover, .link-fenomeni-principale img:hover, .icone-segni p:hover, .icone-segni img:hover {
+    transform: scale(1.1);
 }
 
 .link-fenomeni img, .link-fenomeni-principale img {
@@ -332,6 +338,10 @@ h4 {
     width: 100%; 
 }
 
+.grid video {
+    display: block;
+}
+
 h7 {
     color: #d9d9d9a7;
     position: absolute;
@@ -360,19 +370,8 @@ h8 {
 }
 
 .link-altre-pagine {
-    margin: 40px auto 40px auto;
+    margin: 80px auto 80px auto;
     width: fit-content;
-}
-
-.link-altre-pagine h6 {
-    background-color: #000000;
-    border: 1px solid #fff;
-    border-top-style: hidden;
-    border-left-style: hidden;
-    border-right-style: hidden;
-    border-radius: 16px;
-    text-align: center;
-    padding: 10px;
 }
 
 h6 {
@@ -466,9 +465,75 @@ footer li {
     margin: auto 0 auto auto;
 }
 
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.checkbox {
+    position: absolute;
+    display: block;
+    height: 36px;
+    width: 32px;
+    top: 8px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+transform: rotate(-45deg);
+}
+
+.hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+.hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+
 @media (max-width:1300px) {
     h9 {
-        font-size: 85px;
+        font-size: 75px;
     }
     
     .astronauta {
@@ -477,17 +542,52 @@ footer li {
 }
 
 @media (max-width:1000px) {
+
     .sito {
         font-size: 14px;
     }
-    
-    nav li {
-        font-size: 10px;
-        margin-left: 10px;
+        
+    .checkbox {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: end;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        opacity: 0;
+        text-align: left;
+        display: none;
+        margin-top: 20px;
+        margin-right: 10%;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    nav ul a {
+        display: block;
+    }
+
+    input[type="checkbox"]:checked ~ nav ul {
+    opacity: 100;
+    display: flex;
+    }
+
+    .hamburger-lines {
+    opacity: 100;
     }
     
     h9, h1 {
-        font-size: 80px;
+        font-size: 75px;
     }
 
     .astronauta {
@@ -514,7 +614,7 @@ footer li {
     }
     
     .intro p {
-        font-size: 15px;
+        font-size: 13px;
     }
     
     .vet-alto, .vet-pagine {
@@ -566,6 +666,22 @@ footer li {
         margin: auto auto auto 0;
     }
 
+    footer {
+        background-color: #000000;
+        display: block;
+        padding: 20px
+    }
+
+    footer img {
+        height: 0;
+        width: 0;
+    }
+
+    footer div {
+        margin: auto;
+        text-align: center;
+    }
+
     footer ul {
         display: inline;
         margin: auto;
@@ -578,9 +694,6 @@ footer li {
 }
 
 @media (max-width:700px) {
-    nav ul {
-        margin-right: 10px;
-    }
     
     .astronauta {
         max-height: 200px;
@@ -588,7 +701,7 @@ footer li {
     }
     
     h9 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     
@@ -615,11 +728,15 @@ footer li {
     }
 
     .testo-macroa-univ p, .testo-macroa-fen p, .testo-macroa-astro{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .testo-e-foto img, .testo-e-foto video {
         width: 350px;
+    }
+
+    .testo-macroa-univ a, .testo-macroa-astro a, .link-altre-pagine h6 {
+        font-size: 20px;
     }
 
     .icone-segni {
@@ -634,4 +751,5 @@ footer li {
     h7, h8 {
         font-size: 10px;
     }
+
 }
