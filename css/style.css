@@ -262,7 +262,7 @@ h5 {
     text-align: center;
 }
 
-.link-fenomeni div:hover, .link-fenomeni-principale div:hover, .link-fenomeni img:hover, .link-fenomeni-principale img:hover, .icone-segni p:hover, .icone-segni img:hover {
+.link-fenomeni div:hover, .link-fenomeni-principale div:hover, .link-fenomeni a:hover, .link-fenomeni-principale a:hover, .icone-segni div:hover, .icone-segni a:hover, .macroaree div:hover, .macroaree a:hover {
     transform: scale(1.1);
 }
 
@@ -642,13 +642,14 @@ transform: rotate(-45deg);
 
     .link-fenomeni, .link-fenomeni-principale {
         grid-template-columns:repeat(auto-fill, minmax(110px, 1fr));
+
     }
 
     .link-fenomeni img, .link-fenomeni-principale img {
         max-height: 45px;
     }
 
-    .link-fenomeni p, .link-fenomeni-principale p {
+    .link-fenomeni p, .link-fenomeni-principale p, .macroaree p {
         font-size: 13px;
     }
 
@@ -747,6 +748,20 @@ transform: rotate(-45deg);
     h5 {
         font-size: 18px;
         text-align: center;
+    }
+
+    .macroaree {
+        grid-template-columns:repeat(auto-fill, minmax(110px, 1fr));
+        height: 200px;
+    }
+
+    .macroaree div {
+        padding: 10px 0;
+    }
+
+    .macroaree img {
+        width: 63px;
+        height: 63px;
     }
 
     .testo-macroa-univ p, .testo-macroa-fen p, .testo-macroa-astro{
