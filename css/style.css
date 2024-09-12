@@ -41,7 +41,16 @@ a {
     text-decoration: underline;    
 }
 
+.briciole {
+    margin-left: auto;
+}
 
+.briciole p, .briciole a {
+    color: #ffffff48;
+    font-style: italic;
+    margin: 2px auto 20px 0;
+
+}
 
 nav ul, footer ul {
     display: flex;
@@ -58,6 +67,7 @@ nav li {
 
 main p, h5 {
     text-shadow: 0px 0px 4px #000000;
+    line-height: 1.4;
 } 
 
 .sito {
@@ -191,6 +201,8 @@ h2 {
 
 h5 {
     font-size: 28px;
+    margin-top: 135px;
+    margin-bottom: 40px;
 }
 
 .testo-macroa-univ h5 {
@@ -204,6 +216,7 @@ h5 {
 .testo-macroa-univ p, .testo-macroa-fen p, .testo-macroa-astro{
     font-size: 17px;
     font-weight: 300;
+    max-width: 600px;
 }
 
 .testo-macroa-univ div, .testo-macroa-fen div, .testo-macroa-astro div {
@@ -232,14 +245,14 @@ h5 {
 }
 
 .link-fenomeni {
-    margin: 50px auto;
+    margin: 80px auto;
     display: grid;
     grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;
 }
 
 .link-fenomeni-principale {
-    margin: 50px auto;
+    margin: 80px auto;
     display: grid;
     grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
     gap: 40px;
@@ -252,7 +265,7 @@ h5 {
     border-left-style: hidden;
     border-right-style: hidden;
     border-radius: 16px;
-    padding: 30px 0;
+    margin: 30px 0;
     text-align: center;
 }
 
@@ -314,8 +327,7 @@ h4 {
 }
 
 .testo-pagine p {
-    margin: auto;
-    max-width: 690px;
+    max-width: 600px;
     padding-bottom: 20px;
 }
 
@@ -366,7 +378,11 @@ h8 {
 }
 
 .testo-e-foto img {
-    max-width: 500px;
+    max-width: 600px;
+}
+
+.testo-e-foto ul {
+    list-style: square;
 }
 
 .link-altre-pagine {
@@ -644,6 +660,18 @@ transform: rotate(-45deg);
         margin-top: 100px;
     }
 
+    .link-fenomeni {
+        grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .link-fenomeni img, .link-fenomeni-principale img {
+        max-height: 45px;
+    }
+
+    .link-fenomeni p, .link-fenomeni-principale p {
+        font-size: 13px;
+    }
+
     .grid {
         column-count: 1;
         gap: 0;
@@ -722,6 +750,10 @@ transform: rotate(-45deg);
         padding: 25px 50px 25px 25px;
     } 
 
+    main p, main ul {
+        font-size: 14px;
+    }
+
     h5 {
         font-size: 18px;
         text-align: center;
@@ -729,6 +761,7 @@ transform: rotate(-45deg);
 
     .testo-macroa-univ p, .testo-macroa-fen p, .testo-macroa-astro{
         font-size: 14px;
+        line-height: 1.4;
     }
 
     .testo-e-foto img, .testo-e-foto video {
