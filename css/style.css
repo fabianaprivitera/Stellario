@@ -462,6 +462,8 @@ h6 {
 
 footer {
     background-color: #000000;
+    border-top: solid 2px;
+    border-top-color: #ffffff12;
     display: grid;
     grid-template-columns: 2fr 1fr 4fr;
     padding: 0 10% 0 10%;
