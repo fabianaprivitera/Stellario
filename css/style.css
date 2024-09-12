@@ -753,6 +753,7 @@ transform: rotate(-45deg);
     .macroaree {
         grid-template-columns:repeat(auto-fill, minmax(110px, 1fr));
         height: 200px;
+        margin-bottom: 45%;
     }
 
     .macroaree div {
@@ -789,5 +790,4 @@ transform: rotate(-45deg);
     h7, h8 {
         font-size: 10px;
     }
-
 }
