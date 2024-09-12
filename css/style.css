@@ -46,7 +46,7 @@ a {
 }
 
 .briciole p, .briciole a {
-    color: #ffffff48;
+    color: #b4b4b471;
     font-style: italic;
     margin: 2px auto 20px 0;
 
@@ -660,7 +660,7 @@ transform: rotate(-45deg);
         margin-top: 100px;
     }
 
-    .link-fenomeni {
+    .link-fenomeni, .link-fenomeni-principale {
         grid-template-columns:repeat(auto-fill, minmax(110px, 1fr));
     }
 
