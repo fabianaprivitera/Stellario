@@ -161,13 +161,6 @@ h9 {
     text-align: center;
 }
 
-.vet-alto {
-    height: 80px;
-    width: 80px;
-    margin-top: 10px;
-    margin-left: 1150px;
-}
-
 .macroa-univ, .macroa-fen, .macroa-astro {
     margin: 20px 0 auto 0;
     display: flex;
@@ -290,13 +283,6 @@ h5 {
 h4 {
     font-size: 30px;
     margin: auto auto 20px auto;
-}
-
-.vet-pagine {
-    height: 50px;
-    width: 50px;
-    margin-right: 0;
-    justify-content: end;
 }
 
 .foto-intro img {
@@ -633,14 +619,6 @@ transform: rotate(-45deg);
     
     .intro p {
         font-size: 13px;
-    }
-    
-    .vet-alto, .vet-pagine {
-        position: absolute;
-        height: 30px;
-        width: 30px;
-        margin: 10px;
-        right: 25px;
     }
 
     .macroa-univ, .macroa-fen, .macroa-astro {
